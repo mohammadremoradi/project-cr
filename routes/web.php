@@ -138,6 +138,7 @@ Route::group(['prefix' => 'adpanel'], function () {
 
 
 
+
         Route::prefix('statistics')->group(function () {
             Route::get('survey', [SurveyController::class, 'index'])->name('survey.index');
             Route::get('survey/{survey}', [SurveyController::class, 'show'])->name('survey.show');
